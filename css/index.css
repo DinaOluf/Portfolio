@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Carbon";
+    src: url("/fonts/Carbon.ttf") format("truetype");
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.circle {
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+}
+
+@supports (backdrop-filter: none) {
+	.circle {
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
+	}
+}
+
+@supports not (backdrop-filter: none) {
+    .circle {
+        opacity: 0.9;
+    }
+}
+
+.circle-1 {
+    top: 0;
+    left: 5%;
+}
+
+.circle-2 {
+    top: 50%;
+    right: 5%;
+}
+
+.circle div {
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    background: #c7fffc;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+h1 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* CONTENT */
+
+header,
+footer {
+    width: 100%;
+    height: 12%;
+    background: #3B4555;
+}
+
+main {
+    height: 76%;
+    background: #B3CEF8;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+section {
+    z-index: 1;
+    background: #fff;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 80%;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 105%;
+}
+
+h2 {
+    font-family: Carbon;
+    font-weight: 100;
+}
+
+img {
+    max-height: 5rem;
+}
+
