@@ -45,7 +45,7 @@ body {
 }
 
 .circle div {
-    position: absolute;
+    position: fixed;
     height: 50rem;
     width: 50rem;
     background: #e0fffc;
@@ -142,7 +142,7 @@ section {
 
 .profile ul {
     list-style: circle;
-    padding-left: 3%;
+    padding-left: 0.8rem;
     margin: 0;
 }
 
@@ -256,7 +256,7 @@ footer div {
     font-size: 1.2em;
 }
 
-@media (max-width: 1462px) {
+@media (max-width: 1465px) {
     .content {
         gap: 1%;
     }
@@ -269,6 +269,189 @@ footer div {
 
     .works {
         width: 66%;
+    }
+
+    .circle {
+        height: 40rem;
+        width: 40rem;
+    }
+    
+    .circle-1 {
+        left: 0%;
+    }
+    
+    .circle-2 {
+        right: 0%;
+    }
+    
+    .circle div {
+        height: 40rem;
+        width: 40rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    header,
+    footer {
+        height: 10%;
+    }
+
+    footer {
+        z-index: 1;
+        position: relative;
+    }
+
+    main {
+        height: auto;
+    }
+
+    section {
+        margin-top: 1rem;
+    }
+
+    .profile {
+        margin-top: -3rem;
+        width: 80%;
+        flex-direction: row;
+        min-height: 20rem;
+        gap: 2%;
+    }
+
+    .profile .img-container {
+        margin: 0.5rem;
+        width: 50%;
+        height: 20rem;
+    }
+
+    .profile .img-container img {
+        object-fit: cover;
+        min-height: auto;
+    }
+
+    .profile-text {
+        height: 20rem;
+        width: 50%;
+    } 
+
+    .works {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .works h2 {
+        margin: 1rem;
+    }
+
+    .works-wrap {
+        height: 100rem;
+        gap: 2%;
+    }
+
+    .project-card {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .project-card a {
+        min-width: 99.3%;
+        min-height: 50%;
+    }
+
+    .card-text {
+        height: 100%;
+    }
+
+    .circle {
+        height: 20rem;
+        width: 20rem;
+    }
+    
+    .circle div {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .circle-2 {
+        top: auto;
+        bottom: 0;
+    }
+
+    footer div {
+        margin-left: 1rem;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        width: 95%;
+    }
+
+    .works {
+        width: 95%;
+    }
+
+    .profile h2 {
+        font-size: 2em;
+    }
+
+    .works h2 {
+        font-size: 3em;
+    }
+
+    .card-text h3 {
+        font-size: 1.9em;
+    }
+
+    .works-wrap {
+        justify-content: space-evenly;
+        gap: 2%;
+        height: 110rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .project-card a {
+        width: 60rem;
+    }
+
+
+    .circle {
+        height: 60rem;
+        width: 60rem;
+    }
+    
+    .circle div {
+        height: 60rem;
+        width: 60rem;
+    }
+
+    .card-text {
+        max-height: 14rem;
+    }
+
+    .card-text h3 {
+        font-size: 2.5em;
+    }
+
+    .card-text p, 
+    .card-text ul {
+        font-size: 1.1em;
+    }
+
+    .profile-text ul,
+    .profile-text div {
+        font-size: 1.1em;
+    }
+
+    .profile {
+        max-height: 45rem;
     }
 }
 
