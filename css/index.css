@@ -256,6 +256,30 @@ footer div {
     font-size: 1.2em;
 }
 
+@media (min-width: 951px) {
+    @keyframes maximize {
+        0% {
+            transform: scale(1);
+        }
+    
+        100% {
+            transform: scale(1.07);
+        }
+    }
+    
+    @keyframes minimize {
+        0% {
+            transform: scale(1.07);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+/* MEDIA */
+
 @media (max-width: 1465px) {
     .content {
         gap: 1%;
@@ -290,7 +314,30 @@ footer div {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
+    .profile {
+        margin-top: 1rem;
+    }
+
+    .works {
+        margin-top: 1rem;
+        min-height: 45rem;
+    }
+
+    .works h2 {
+        font-size: 3em;
+    }
+
+    .card-text h3 {
+        font-size: 2em;
+    }
+
+    .card-text p {
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 950px) {
     .content {
         flex-direction: column;
         justify-content: start;
@@ -365,6 +412,7 @@ footer div {
 
     .card-text {
         height: 100%;
+        line-height: 1.7em;
     }
 
     .circle {
@@ -412,7 +460,17 @@ footer div {
     .works-wrap {
         justify-content: space-evenly;
         gap: 2%;
-        height: 110rem;
+        height: 95rem;
+    }
+
+    .circle {
+        height: 15rem;
+        width: 15rem;
+    }
+    
+    .circle div {
+        height: 15rem;
+        width: 15rem;
     }
 }
 
