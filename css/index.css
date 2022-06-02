@@ -45,7 +45,6 @@ body {
 }
 
 .circle div {
-    position: fixed;
     height: 50rem;
     width: 50rem;
     background: #e0fffc;
