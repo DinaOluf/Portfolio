@@ -1,3 +1,3 @@
 # Dina Olufsen's Portfolio
 
-![image](https://user-images.githubusercontent.com/91533917/171837753-b9d72e75-2509-4f47-8efb-a907d001acc5.png)
+![image](https://user-images.githubusercontent.com/91533917/171837970-a581549b-99cd-4499-816f-35c1b36866dc.png)
