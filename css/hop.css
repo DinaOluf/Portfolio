@@ -1,4 +1,4 @@
-.hop-game {
+#hopGame {
     background-image: url("../images/hop/landscape.jpg");
     background-size: cover;
     background-repeat: repeat-x;
@@ -7,7 +7,9 @@
     margin-top: 2rem;
     z-index: 2;
     position: relative;
-    /* animation: bg-scroll 30s linear infinite; */
+    overflow: hidden;
+    animation: bg-scroll 40s linear infinite;
+    animation-play-state: paused;
 }
 
 @keyframes bg-scroll {
@@ -19,7 +21,7 @@
     }
   }
 
-#ground {
+.ground {
     background-color: rgb(162, 212, 45);
     height: 58px;
     width: 100%;
@@ -29,20 +31,21 @@
 }
 
 #hopper {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     height: 15px;
-    width: 30px;
+    width: 60px;
     position: absolute;
     bottom: 58px;
     left: 80px;
+    z-index: 4;
 }
 
 #hopper img {
-    transform: translate(-42%, -80%);
+    transform: translate(-28%, -80%);
 }
 
 .jump {
-    animation: jump 0.8s linear;
+    animation: jump 1s linear;
   }
   
 @keyframes jump {
@@ -67,26 +70,85 @@
     }
 }
 
-#obstacle {
-    background-color: black;
-    width: 20px;
-    height: 50px;
+#rock1 {
+    width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: 58px;
-    right: 0;
-  
-    /* background-image: url("img/cactus.png");
-    background-size: 20px 40px; */
-  
-    /* animation: block 1s infinite linear; */
+    bottom: 3rem;
+    right: -120px;
+    background-image: url("../images/hop/rock1.png");
+    background-size: 100px 100px;
 }
 
-/* @keyframes block {
+#rock2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 3rem;
+    right: -120px;
+    background-image: url("../images/hop/rock1.png");
+    background-size: 80px 80px;
+}
+
+#rock3 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 3rem;
+    right: -120px;
+    background-image: url("../images/hop/rock1.png");
+    background-size: 120px 120px;
+}
+
+.slide {
+    animation: block 3s 1 linear;
+}
+
+@keyframes block {
     0% {
-      left: 580px;
+      right: -120px;
     }
   
     100% {
-      left: -20px;
+      right: 61rem;
     }
-  } */
+  }
+
+  .hide-overlay {
+    z-index: 0;
+    font-size: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .show-overlay {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+  }
+
+  #score {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    font-size: 1em;
+    text-align: right;
+  }
+
+  .hi {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    font-size: 1em;
+    text-align: right;
+  }
+
