@@ -70,7 +70,7 @@ h3 {
 
 .faded-text {
     font-family: Consolas, monaco, monospace, Arial, Helvetica, sans-serif;
-    color: grey;
+    color: rgb(97, 97, 97);
     font-size: 1em;
     font-weight: lighter;
 }
