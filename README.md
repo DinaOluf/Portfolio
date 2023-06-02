@@ -50,7 +50,7 @@ This project is licensed under the [Boost Software License - Version 1.0](https:
 
 
 ## Image References
-DOG GAME:
+### DOG GAME:
 
  Peeking Dog: https://www.freepik.com/free-vector/cute-dog-with-brown-fur_5361196.htm#query=peek%20dog&position=30&from_view=search&track=ais
 
