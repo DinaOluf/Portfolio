@@ -75,6 +75,22 @@ h3 {
     font-weight: lighter;
 }
 
+.return {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    padding: 0.5rem 0.5rem 0.7rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(90deg, #3B4555, #FFF, #FFF);
+}
+
+.return:hover {
+    font-weight: bolder;
+}
+
 /* CONTENT */
 
 img {
@@ -552,6 +568,21 @@ footer div {
 
     .profile {
         max-height: 45rem;
+    }
+}
+
+@media (min-width: 970px) {
+    #hopTeaser {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        transform: scaleX(-1);
+        overflow: hidden;
+    }
+
+    #hopTeaser img {
+        height: 100%;
     }
 }
 

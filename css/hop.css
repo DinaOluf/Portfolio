@@ -1,0 +1,154 @@
+#hopGame {
+    background-image: url("../images/hop/landscape.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 60rem;
+    height: 30rem;
+    margin-top: 2rem;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    animation: bg-scroll 40s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes bg-scroll {
+    from {
+        background-position-x: left;
+    }
+    to {
+        background-position-x: right+60rem;
+    }
+  }
+
+.ground {
+    background-color: rgb(162, 212, 45);
+    height: 58px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#hopper {
+    height: 15px;
+    width: 60px;
+    position: absolute;
+    bottom: 58px;
+    left: 80px;
+    z-index: 4;
+}
+
+#hopper img {
+    transform: translate(-28%, -80%);
+    height: 80px;
+}
+
+.jump {
+    animation: jump 1s linear;
+  }
+  
+@keyframes jump {
+    0% {
+        bottom: 58px;
+    }
+
+    25% {
+        bottom: 250px;
+    }
+
+    40% {
+        bottom: 300px;
+    }
+
+    70% {
+        bottom: 230px;
+    }
+
+    100% {
+        bottom: 58px;
+    }
+}
+
+#rock1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 45px;
+    right: -120px;
+    background-image: url("../images/hop/rock1.png");
+    background-size: 100px 100px;
+}
+
+#rock2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 45px;
+    right: -120px;
+    background-image: url("../images/hop/rock2.png");
+    background-size: 80px 80px;
+}
+
+#rock3 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 45px;
+    right: -120px;
+    background-image: url("../images/hop/rock3.png");
+    background-size: 120px 120px;
+}
+
+.slide {
+    animation: block 3s 1 linear;
+}
+
+@keyframes block {
+    0% {
+      right: -120px;
+    }
+  
+    100% {
+      right: 61rem;
+    }
+  }
+
+  .hide-overlay {
+    z-index: 0;
+    font-size: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .show-overlay {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+  }
+
+  #score {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    font-size: 1em;
+    text-align: right;
+  }
+
+  .hi {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    font-size: 1em;
+    text-align: right;
+  }
+
