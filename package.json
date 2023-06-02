@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Dina Olufsen's Portfolio. Containing some of her work and a fun little game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinaOluf/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "projects",
+    "collection",
+    "websites",
+    "html",
+    "css",
+    "javascript",
+    "game"
+  ],
+  "author": "Dina Olufsen",
+  "license": "BSL-1.0",
+  "bugs": {
+    "url": "https://github.com/DinaOluf/Portfolio/issues"
+  },
+  "homepage": "https://github.com/DinaOluf/Portfolio#readme"
+}
