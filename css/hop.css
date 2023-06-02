@@ -31,7 +31,6 @@
 }
 
 #hopper {
-    /* background-color: rgb(255, 255, 255); */
     height: 15px;
     width: 60px;
     position: absolute;
@@ -42,6 +41,7 @@
 
 #hopper img {
     transform: translate(-28%, -80%);
+    height: 80px;
 }
 
 .jump {
@@ -74,7 +74,7 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 3rem;
+    bottom: 45px;
     right: -120px;
     background-image: url("../images/hop/rock1.png");
     background-size: 100px 100px;
@@ -84,9 +84,9 @@
     width: 80px;
     height: 80px;
     position: absolute;
-    bottom: 3rem;
+    bottom: 45px;
     right: -120px;
-    background-image: url("../images/hop/rock1.png");
+    background-image: url("../images/hop/rock2.png");
     background-size: 80px 80px;
 }
 
@@ -94,9 +94,9 @@
     width: 120px;
     height: 120px;
     position: absolute;
-    bottom: 3rem;
+    bottom: 45px;
     right: -120px;
-    background-image: url("../images/hop/rock1.png");
+    background-image: url("../images/hop/rock3.png");
     background-size: 120px 120px;
 }
 
