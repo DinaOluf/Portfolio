@@ -85,6 +85,7 @@ h3 {
     font-size: 1.2rem;
     border-radius: 0 5px 5px 0;
     background: linear-gradient(90deg, #3B4555, #FFF, #FFF);
+    z-index: 2;
 }
 
 .return:hover {
@@ -284,6 +285,10 @@ footer div {
     align-self: center;
     margin-left: 4rem;
     font-size: 1.2em;
+}
+
+#hopTeaser {
+    display: none;
 }
 
 @media (min-width: 951px) {
@@ -571,8 +576,9 @@ footer div {
     }
 }
 
-@media (min-width: 970px) {
+@media (min-width: 950px) {
     #hopTeaser {
+        display: block;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -585,4 +591,3 @@ footer div {
         height: 100%;
     }
 }
-
