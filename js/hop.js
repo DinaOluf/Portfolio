@@ -107,17 +107,17 @@ const watchCollision = setInterval(function () {
     let rock2Left = parseInt(window.getComputedStyle(rock2).getPropertyValue("left"));
     let rock3Left = parseInt(window.getComputedStyle(rock3).getPropertyValue("left"));
 
-    if (rock1Left < 140 && rock1Left > 100 && hopperBottom <= 90) {
+    if (rock1Left < 163 && rock1Left > 130 && hopperBottom <= 60) {
         isPaused = true;
         pauseGame();
     }
 
-    if (rock2Left < 130 && rock1Left > 100 && hopperBottom <= 70) {
+    if (rock2Left < 163 && rock1Left > 140 && hopperBottom <= 60) {
         isPaused = true;
         pauseGame();
     }
 
-    if (rock3Left < 150 && rock1Left > 100 && hopperBottom <= 100) {
+    if (rock3Left < 160 && rock1Left > 140 && hopperBottom <= 60) {
         isPaused = true;
         pauseGame();
     }
