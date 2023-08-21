@@ -104,6 +104,9 @@ footer {
     height: 10%;
     background: #3B4555;
 }
+header {
+    max-height: 2.5%;
+}
 
 main {
     height: 80%;
@@ -145,9 +148,9 @@ section {
 
 .profile .img-container img {
     object-fit: cover;
-    width: 120%;
-    height: 120%;
-    transform: translateX(-10%);
+    min-width: 110%;
+    min-height: 150%;
+    transform: translate(-10%, 0%)
 }
 
 .profile-text {
@@ -285,6 +288,56 @@ footer div {
     align-self: center;
     margin-left: 4rem;
     font-size: 1.2em;
+}
+
+.small-icons {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.mini-react {
+    background-image: url("../images/mini-logos/react-logo.png");
+    background-position: center;
+    background-size: cover;
+    width: 17px;
+}
+
+.mini-bs {
+    background-image: url("../images/mini-logos/bs-logo.png");
+    background-position: center;
+    background-size: cover;
+    width: 18px;
+}
+
+.mini-sass {
+    background-image: url("../images/mini-logos/sass-logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mini-html {
+    background-image: url("../images/mini-logos/html5-logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mini-js {
+    background-image: url("../images/mini-logos/js-logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mini-css {
+    background-image: url("../images/mini-logos/css3-logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mini-wp {
+    background-image: url("../images/mini-logos/wp-logo.png");
+    background-position: center;
+    background-size: cover;
 }
 
 #hopTeaser {
@@ -429,7 +482,7 @@ footer div {
 
     .profile .img-container img {
         object-fit: cover;
-        min-height: auto;
+        max-width: 100%;
     }
 
     .profile-text {
@@ -499,7 +552,24 @@ footer div {
 @media (max-width: 500px) {
     .profile {
         width: 95%;
+        flex-direction: column;
     }
+
+    .profile .img-container {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .profile .img-container img {
+        min-width: 120%;
+    }
+
+    .profile-text {
+        height: 12rem;
+        width: 90%;
+        margin-bottom: 0.5rem;
+    } 
 
     .works {
         width: 95%;
@@ -574,6 +644,12 @@ footer div {
     .profile {
         max-height: 45rem;
     }
+}
+
+@media (min-height: 732px) {
+ header {
+    max-height: 10%;
+ }
 }
 
 @media (min-width: 950px) {
