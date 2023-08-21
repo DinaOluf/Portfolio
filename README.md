@@ -1,7 +1,8 @@
 # [Dina Olufsen's Portfolio](https://dina-portfolio.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ab8c183-44b6-4971-b28f-2455a9144cde/deploy-status)](https://app.netlify.com/sites/dina-portfolio/deploys)
 
-![image](https://github.com/DinaOluf/Portfolio/assets/91533917/58f915e6-045f-4c81-9460-dc86799bbd3a)
+![bilde](https://github.com/DinaOluf/Portfolio/assets/91533917/0b04d959-3f3a-442c-8ad9-a590895a0824)
+
 
 
 An Accommodation Application.
